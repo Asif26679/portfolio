@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Chango&family=Exo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IT+Moderna:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;400&family=Sigmar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=VT323&display=swap');
 #element{
     font-size: 3rem;
     color: rgb(153, 153, 153);
@@ -9,12 +10,13 @@
     font-family: "Poppins", sans-serif;
     
 }
-#welcome_text{
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: rgb(0, 0, 0);
+#name{
+  font-family: "VT323", monospace;
+  color: #b8f936;
+  font-weight: 400;
+  font-style: normal;
 }
+
 nav ul li a{
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
@@ -41,4 +43,78 @@ nav ul li a:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
+}
+
+/* .wrapper{
+    padding: 10px 10%; */
+
+
+#card-area{
+    padding: 50px 0;
+}
+
+.box-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.box{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+.box img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    height: 100%;
+}
+.overlay{
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent,#1c1c1c 58%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.overlay h3{
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 90%;
+    font-family: bebas neue;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+}
+.overlay p{
+    color: white;
+}
+.overlay a{
+    margin-top: 10px;
+    color: #262626;
+    text-decoration: none;
+    font-size: 14px;
+    background: #ffff;
+    border-radius: 50px;
+    padding: 5px 15px;
+}
+.box:hover img{
+    transform:scale(1.2);
+}
+.box:hover .overlay{
+    height: 100%;
 }
