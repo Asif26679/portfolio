@@ -36,22 +36,7 @@ theme.addEventListener('click',()=>{
     }
     
 })
-const welcomeText=document.querySelector("#welcome_text")
-function glichEffect(){
 
 
-    gsap.to("#welcome_text", {
-        duration: 0.1,
-        x: () => (Math.random() - 0.5) * 4,
-        y: () => (Math.random() - 0.5) * 4,
-        rotation: () => (Math.random() - 0.5) * 10,
-        textShadow: () => `${Math.random() * 5}px ${Math.random() * 5}px red, ${Math.random() * -5}px ${Math.random() * -5}px blue`,
-        repeat: -1,
-        yoyo: true,
-        ease:"power1.inOut"
-      });
-}
-glichEffect();
  
-welcomeText.addEventListener('mouseenter',()=>glichEffect());
-welcomeText.addEventListener('mouseleave',()=>gsap.killTweenOf(text))
+
