@@ -45,6 +45,9 @@ nav ul li a:hover{
     -webkit-text-fill-color: transparent;
     
 }
+#sideMenu{
+backdrop-filter: blur(10px);
+}
 
 /* .wrapper{
     padding: 10px 10%; */
@@ -75,7 +78,7 @@ nav ul li a:hover{
     height: 100%;
 }
 .overlay{
-    height: 0;
+    height: max-content;
     width: 100%;
     background: linear-gradient(transparent,#1c1c1c 58%);
     border-radius: 10px;
