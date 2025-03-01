@@ -40,3 +40,30 @@ theme.addEventListener('click',()=>{
 
  
 
+
+
+document.addEventListener("DOMContentLoaded",function(){
+    let ProgressText=document.querySelector('#progress-text');
+    let progressCircle=document.querySelector("#progress-circle");
+    let content=document.querySelector("#content");
+    let loadingScreen=document.querySelector("#loadingScreen");
+    let text=document.querySelector('.text')
+    let progress=0;
+    let interval=setInterval(()=>{
+        progress+=1;
+        ProgressText.innerHTML=progress+"%";
+        progressCircle.style.strokeDashoffset=502-(502*progress)/100;
+        if(progress>=30){
+            let yelloIntesnity=Math.min((progress-30)*3,255);
+            loadingScreen.style.background=`linear-gradient(to bottom,rgb(255,${yelloIntesnity},0),#f8f8f8)`;
+            text.innerHTML="Just Reaching.........."
+        }
+
+    
+        if(progress>=100){
+            clearInterval(interval);
+            loadingScreen.style.display='none';
+            content.style.display="block";
+        }
+    },50)
+})

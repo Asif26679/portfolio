@@ -10,236 +10,248 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     
     
-    
+  
 </head>
-<body class="overflow-x-hidden">
-  <!------------NavBar------------------------>
+<body class="">
+  <div id="loadingScreen">
+    <div class="loader">
+    <svg width="200" height="200">
+      <circle cx="100" cy="100" r="80" stroke="#ccc" stroke-width="15" fill="none"/>
+      <circle id="progress-circle" cx="100" cy="100" r="80" stroke="blue" stroke-width="10" fill="none" stroke-dasharray="502" stoke-dashoffset="502"/>
+    </svg>
+  </div>
+    <p id="progress-text">0%</p> <span id="progress-text" class="text" style="font-family: 'Courier New', Courier, monospace; margin-left: 150px;" > Please wait!!....</span>
+  </div>
+  <!--------Main Content-------------->
+  <div id="content">
     <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-1 flex items-center justify-between z-50 bg-slate-300">
-        <h1 class="w-26 cursor-pointer mr-12 text-4xl " id="logo">Asif</h1>
-        <ul class="hidden md:flex items-center gap-6 lg:gap-8  bg-none px-12 y-3   text-black" id="navUl">
-            <li><a href="#top">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#work">My Work</a></li>
-        </ul>
-        <div class="flex items-center gap-1">
-            <button>
-                <i class="fa-solid fa-moon" id="mode"></i>
-            </button>
-            <a href="#contact" class="hidden lg:flex md:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4" id="contact_btn">Contact <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
-            <button class="block md:hidden ml-3" onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
-        </div>
+      <h1 class="w-26 cursor-pointer mr-12 text-4xl " id="logo">Asif</h1>
+      <ul class="hidden md:flex items-center gap-6 lg:gap-8  bg-none px-12 y-3   text-black" id="navUl">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">My Work</a></li>
+      </ul>
+      <div class="flex items-center gap-1">
+          <button>
+              <i class="fa-solid fa-moon" id="mode"></i>
+          </button>
+          <a href="#contact" class="hidden lg:flex md:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4" id="contact_btn">Contact <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
+          <button class="block md:hidden ml-3" onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
+      </div>
 
-        <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen  transition duration-500 bg-green-200">
+      <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen  transition duration-500 bg-green-200">
 
-            <div class="absolute right-6 top-6 " onclick="closeMenu()" >
-                <i class="fa-solid fa-xmark "></i>
-            </div>
-            <li><a href="#top" onclick="closeMenu()">Home</a></li>
-            <li><a href="#about" onclick="closeMenu()">About Me</a></li>
-            <li><a href="#services" onclick="closeMenu()">Services</a></li>
-            <li><a href="#work" onclick="closeMenu()">My Work</a></li> 
-        </ul>
-    </nav>
+          <div class="absolute right-6 top-6 " onclick="closeMenu()" >
+              <i class="fa-solid fa-xmark "></i>
+          </div>
+          <li><a href="#top" onclick="closeMenu()">Home</a></li>
+          <li><a href="#about" onclick="closeMenu()">About Me</a></li>
+          <li><a href="#services" onclick="closeMenu()">Services</a></li>
+          <li><a href="#work" onclick="closeMenu()">My Work</a></li> 
+      </ul>
+  </nav>
 
-               <!-----------Header Section------------->
+             <!-----------Header Section------------->
 
-   <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
-     <img src="ai-generated-8329596_1280.webp" alt="" class="rounded-full w-32">
-     <h1 class="text-2xl sm:text-3xl lg:text-[70px]" id="name">Hello, I am Asif</h1><span id="element" class="text-4xl"></span>
-     <p class="max-w-2xl mx-auto">Hello, I am Front-end web developer </p>
-     <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
-        <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] items-center gap-2 text-white">Contact Me <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
-        <a href="myresume.pdf" download class="px-10 py-3 border rounded-full border-gray-500  items-center gap-2 bg-gray-400">Resume <span><i class="fa-solid fa-circle-down"></i></span></a>
-     </div>
-   </div>  
+ <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+   <img src="ai-generated-8329596_1280.webp" alt="" class="rounded-full w-32">
+   <h1 class="text-2xl sm:text-3xl lg:text-[70px]" id="name">Hello, I am Asif</h1><span id="element" class="text-4xl"></span>
+   <p class="max-w-2xl mx-auto">Hello, I am Front-end web developer </p>
+   <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+      <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] items-center gap-2 text-white">Contact Me <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
+      <a href="myresume.pdf" download class="px-10 py-3 border rounded-full border-gray-500  items-center gap-2 bg-gray-400">Resume <span><i class="fa-solid fa-circle-down"></i></span></a>
+   </div>
+ </div>  
 
-                    <!---------ABout Me---------------------------------->
+                  <!---------ABout Me---------------------------------->
 
 <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
-    <h4 class="text-center mb-2 text-l">Introduction</h4>
-    <h2 class="text-center text-5xl">About Me</h2>
-    <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
-        <div class="max-w-max mx-auto relative">
-       <img src="developer-8764528_1280.webp" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
-        </div>
-        <div class="flex-1">
-           <p class="mb-10 max-w-2xl">I'm a Frontend Focused Web Developer building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.
+  <h4 class="text-center mb-2 text-l">Introduction</h4>
+  <h2 class="text-center text-5xl">About Me</h2>
+  <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+      <div class="max-w-max mx-auto relative">
+     <img src="developer-8764528_1280.webp" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
+      </div>
+      <div class="flex-1">
+         <p class="mb-10 max-w-2xl">I'm a Frontend Focused Web Developer building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.
 
-            I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin and Instagram where I post useful content related to Web Development and Programming
-            
-            I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
-           <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+          I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin and Instagram where I post useful content related to Web Development and Programming
+          
+          I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
+         <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
 
-               <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#007BFF] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] text-wrap"><i class="fa-solid fa-code  mt-3 text-3xl"></i>
-               <h3 class="my-4  text-wrap font-semibold ">Languages</h3>
-               <p class="text-gray-600 text-sm">HTML,CSS,JavaScript,React</p>
-               </li>
-               <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#96f0cc] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"><i class="fa-solid fa-school  mt-3 text-3xl"></i>
-                <h3 class="my-4 font-semibold ">Education</h3>
-                <p class="text-gray-600 text-sm">Bachelor of technology</p>
-                </li>
-                <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#8aeef2] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"><i class="fa-solid fa-briefcase mt-3 text-3xl"></i>
-                    <h3 class="my-4 font-semibold ">Experience</h3>
-                    <p class="text-gray-600 text-sm">2 Years</p>
-                    </li>
-           </ul>
-           <h4 class="my-6 text-gray-700">Tools i use</h4>
-           <ul class="flex items-center gap-3 sm:gap-5">
-            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer  hover:bg-[#e3a8f8] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] duration-500" ><img src="figma.jpg.avif" alt="" class="h-12"></li>
-            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] duration-500" ><img src="git.png" alt="" class="h-12"></li>
-            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] duration-500" ><img src="node.png" alt="" class="h-12"></li>
-            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] duration-500" ><img src="vs.png" alt="" class="h-12"></li>
-            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] duration-500" ><img src="word.jpg" alt="" class="h-12"></li>
-           </ul>
-        </div>
-    </div>
+             <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#007BFF] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] text-wrap"><i class="fa-solid fa-code  mt-3 text-3xl"></i>
+             <h3 class="my-4  text-wrap font-semibold ">Languages</h3>
+             <p class="text-gray-600 text-sm">HTML,CSS,JavaScript,React</p>
+             </li>
+             <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#96f0cc] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"><i class="fa-solid fa-school  mt-3 text-3xl"></i>
+              <h3 class="my-4 font-semibold ">Education</h3>
+              <p class="text-gray-600 text-sm">Bachelor of technology</p>
+              </li>
+              <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#8aeef2] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"><i class="fa-solid fa-briefcase mt-3 text-3xl"></i>
+                  <h3 class="my-4 font-semibold ">Experience</h3>
+                  <p class="text-gray-600 text-sm">2 Years</p>
+                  </li>
+         </ul>
+         <h4 class="my-6 text-gray-700">Tools i use</h4>
+         <ul class="flex items-center gap-3 sm:gap-5">
+          <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer  hover:bg-[#e3a8f8] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] duration-500" ><img src="figma.jpg.avif" alt="" class="h-12"></li>
+          <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] duration-500" ><img src="git.png" alt="" class="h-12"></li>
+          <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] duration-500" ><img src="node.png" alt="" class="h-12"></li>
+          <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] duration-500" ><img src="vs.png" alt="" class="h-12"></li>
+          <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] duration-500" ><img src="word.jpg" alt="" class="h-12"></li>
+         </ul>
+      </div>
+  </div>
 </div>
 
-               <!--------------------Services--------------------->
-   <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
-    <h4 class="text-center mb-2 text-l">What i offer</h4>
-    <h2 class="text-center text-5xl">My Services</h2>
-    
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10">
-        <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#e49dfd] hover:-translate-y-1 duration-500">
-            <img src="design.jpg" alt="" class="w-20">
-            <h3 class="text-lg my-4 text-gray-700">Website Design</h3>
-            <p>I create modern, responsive, and visually appealing websites that enhance user experience and engagement.
-              Designing clean, intuitive, and high-performing websites that align with your brand's vision.
-              Bringing creativity and functionality together to craft stunning web experiences,
-              Transforming ideas into sleek, responsive, and user-friendly websites.
-              </p>
-            <a href="" class="flex items-center gap-2 text-sm mt-5">Read More <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
-        </div>
-        <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#e4aff7] hover:-translate-y-1 duration-500">
-            <img src="apple-developer-app-128x128_2x.png" alt="" class="w-20">
-            <h3 class="text-lg my-4 text-gray-700">App Development</h3>
-            <p>"Building high-performance, user-friendly, and scalable applications for all platforms."
-              "Turning ideas into functional, sleek, and engaging mobile & web applications."
-              "Developing innovative apps with a focus on speed, security, and seamless experience."
-              "Creating intuitive, efficient, and feature-rich applications that users love</p>
-            <a href="" class="flex items-center gap-2 text-sm mt-5">Read More <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
-        </div>
-        <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#704180] hover:-translate-y-1 duration-500">
-            <img src="graphics.png" alt="" class="w-20">
-            <h3 class="text-lg my-4 text-gray-700">Graphic Design</h3>
-            <p>🎨Bringing ideas to life with stunning and creative visual designs. <br>
-              🖌️ Crafting eye-catching graphics that enhance brand identity and engagement. <br>
-              💡 Blending creativity with strategy to design visuals that tell a story. <br>
-              🔥 Transforming concepts into visually appealing and professional designs. <br>
-              🚀 Designing with precision, creativity, and a focus on brand consistency.</p>
-            <a href="" class="flex items-center gap-2 text-sm mt-5">Read More <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
-        </div>
-        <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#dca2f1] hover:-translate-y-1 duration-500">
-            <img src="ui.avif" alt="" class="w-20">
-            <h3 class="text-lg my-4 text-gray-700">UI/UX</h3>
-            <p> Crafting seamless and visually appealing user experiences with intuitive design.
-              Designing user-friendly interfaces that enhance engagement and usability.
-              Blending aesthetics with functionality to create interactive and accessible designs.
-              Turning ideas into smooth, efficient, and visually stunning user experiences.
-              Creating digital experiences that are not just beautiful but also highly functional..</p>
-            <a href="" class="flex items-center gap-2 text-sm mt-5">Read More <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
-        </div>
-    </div>
-   </div>
+             <!--------------------Services--------------------->
+ <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
+  <h4 class="text-center mb-2 text-l">What i offer</h4>
+  <h2 class="text-center text-5xl">My Services</h2>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10">
+      <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#e49dfd] hover:-translate-y-1 duration-500">
+          <img src="design.jpg" alt="" class="w-20">
+          <h3 class="text-lg my-4 text-gray-700">Website Design</h3>
+          <p>I create modern, responsive, and visually appealing websites that enhance user experience and engagement.
+            Designing clean, intuitive, and high-performing websites that align with your brand's vision.
+            Bringing creativity and functionality together to craft stunning web experiences,
+            Transforming ideas into sleek, responsive, and user-friendly websites.
+            </p>
+          <a href="" class="flex items-center gap-2 text-sm mt-5">Read More <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
+      </div>
+      <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#e4aff7] hover:-translate-y-1 duration-500">
+          <img src="apple-developer-app-128x128_2x.png" alt="" class="w-20">
+          <h3 class="text-lg my-4 text-gray-700">App Development</h3>
+          <p>"Building high-performance, user-friendly, and scalable applications for all platforms."
+            "Turning ideas into functional, sleek, and engaging mobile & web applications."
+            "Developing innovative apps with a focus on speed, security, and seamless experience."
+            "Creating intuitive, efficient, and feature-rich applications that users love</p>
+          <a href="" class="flex items-center gap-2 text-sm mt-5">Read More <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
+      </div>
+      <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#704180] hover:-translate-y-1 duration-500">
+          <img src="graphics.png" alt="" class="w-20">
+          <h3 class="text-lg my-4 text-gray-700">Graphic Design</h3>
+          <p>🎨Bringing ideas to life with stunning and creative visual designs. <br>
+            🖌️ Crafting eye-catching graphics that enhance brand identity and engagement. <br>
+            💡 Blending creativity with strategy to design visuals that tell a story. <br>
+            🔥 Transforming concepts into visually appealing and professional designs. <br>
+            🚀 Designing with precision, creativity, and a focus on brand consistency.</p>
+          <a href="" class="flex items-center gap-2 text-sm mt-5">Read More <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
+      </div>
+      <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#dca2f1] hover:-translate-y-1 duration-500">
+          <img src="ui.avif" alt="" class="w-20">
+          <h3 class="text-lg my-4 text-gray-700">UI/UX</h3>
+          <p> Crafting seamless and visually appealing user experiences with intuitive design.
+            Designing user-friendly interfaces that enhance engagement and usability.
+            Blending aesthetics with functionality to create interactive and accessible designs.
+            Turning ideas into smooth, efficient, and visually stunning user experiences.
+            Creating digital experiences that are not just beautiful but also highly functional..</p>
+          <a href="" class="flex items-center gap-2 text-sm mt-5">Read More <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
+      </div>
+  </div>
+ </div>
 
-                              <!--My Work---->
+                            <!--My Work---->
 <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
-    <h2 class="text-center text-5xl">My Latest Work</h2>
-    
-                <div class="wrapper">
-                  <div class="box-area">
-                    <div class="box">
-                      <img src="weather.webp" alt="">
-                      <div class="overlay">
-                        <h3>Weather App</h3>
-                        <p>Weather forecast accurate and fast with API</p>
-                        <a href="./weather/Weather App API/new.html" target="_blank">Know More</a>
-                      </div>
-                    </div>
-                    <div class="box">
-                      <img src="e-commerce.jpg" alt="">
-                      <div class="overlay">
-                        <h3>E-Commerce</h3>
-                        <p>A e-commerce website like flipkart</p>
-                        <a href="#">Know More</a>
-                      </div>
-                    </div>
-                    <div class="box">
-                      <img src="job.webp" alt="">
-                      <div class="overlay">
-                        <h3>Job Search Portal</h3>
-                        <p>Weather forecast accurate and fast</p>
-                        <a href="#">Know More</a>
-                      </div>
-                    </div>
-                    <div class="box">
-                      <img src="ai.jpg" alt="">
-                      <div class="overlay">
-                        <h3>Ai Chatbot</h3>
-                        <p>chat with Ai with all features</p>
-                        <a href="#">Know More</a>
-                      </div>
+  <h2 class="text-center text-5xl">My Latest Work</h2>
+  
+              <div class="wrapper">
+                <div class="box-area">
+                  <div class="box">
+                    <img src="weather.webp" alt="">
+                    <div class="overlay">
+                      <h3>Weather App</h3>
+                      <p>Weather forecast accurate and fast with API</p>
+                      <a href="./weather/Weather App API/new.html" target="_blank">Know More</a>
                     </div>
                   </div>
-
+                  <div class="box">
+                    <img src="e-commerce.jpg" alt="">
+                    <div class="overlay">
+                      <h3>E-Commerce</h3>
+                      <p>A e-commerce website like flipkart</p>
+                      <a href="#">Know More</a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <img src="job.webp" alt="">
+                    <div class="overlay">
+                      <h3>Job Search Portal</h3>
+                      <p>Weather forecast accurate and fast</p>
+                      <a href="#">Know More</a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <img src="ai.jpg" alt="">
+                    <div class="overlay">
+                      <h3>Ai Chatbot</h3>
+                      <p>chat with Ai with all features</p>
+                      <a href="#">Know More</a>
+                    </div>
+                  </div>
                 </div>
-     
-    </div>
-    <a href="#" class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500">Show more... <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
+
+              </div>
+   
+  </div>
+  <a href="#" class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500">Show more... <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
 </div>
 
-                  <!------------------Contact Me--------------->
+                <!------------------Contact Me--------------->
 <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('')]">
-    <h2 class="text-center text-5xl">Get in touch</h2>
-    <p class="text-center p-6 text-gray-700">You can connect me and ask any queries regarding to any work</p>
-    <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+  <h2 class="text-center text-5xl">Get in touch</h2>
+  <p class="text-center p-6 text-gray-700">You can connect me and ask any queries regarding to any work</p>
+  <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
 
-      <input type="hidden" name="access_key" value="9f003779-9185-4912-9511-bae75c4803f5">
-        <div class=" grid grid-cols-auto gap-6 mt-10 mb-8">
-            <input type="text" placeholder="Enter Your Name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required name="name">
-            <input type="email" placeholder="Enter Your Email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required name="email">
-        </div>
-        <textarea  rows="6" placeholder="Please! Enter Your Message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6" required name="message"></textarea>
-        <button class="py-3 px-8 w-max flex items-center justify-center gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 cursor-pointer">Send
-            <img src="2343641.png" alt="" class="w-6">
-        </button>
-    </form>
-    <div class="rounded-xl flex justify-center items-center mt-5">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16574.39497176886!2d77.2963636416862!3d28.5728462420177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4767689a381%3A0x83aeae3e998c214d!2sBatla%20House%2C%20Okhla%2C%20New%20Delhi%2C%20Delhi%20110025!5e0!3m2!1sen!2sin!4v1740813288338!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg shadow-[2px_0px_2px_2px_#000] h-80"></iframe>
-    </div>
+    <input type="hidden" name="access_key" value="9f003779-9185-4912-9511-bae75c4803f5">
+      <div class=" grid grid-cols-auto gap-6 mt-10 mb-8">
+          <input type="text" placeholder="Enter Your Name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required name="name">
+          <input type="email" placeholder="Enter Your Email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required name="email">
+      </div>
+      <textarea  rows="6" placeholder="Please! Enter Your Message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6" required name="message"></textarea>
+      <button class="py-3 px-8 w-max flex items-center justify-center gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 cursor-pointer">Send
+          <img src="2343641.png" alt="" class="w-6">
+      </button>
+  </form>
+  <div class="rounded-xl flex justify-center items-center mt-5">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16574.39497176886!2d77.2963636416862!3d28.5728462420177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4767689a381%3A0x83aeae3e998c214d!2sBatla%20House%2C%20Okhla%2C%20New%20Delhi%2C%20Delhi%20110025!5e0!3m2!1sen!2sin!4v1740813288338!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg shadow-[2px_0px_2px_2px_#000] h-80"></iframe>
+  </div>
 </div>
-                   <!-------Footer---->
-  <div class="mt-20">
-    <div class="text-center">
-     <img src="colorful-bird-illustration-gradient_343694-1741.avif" alt="" class="w-36 mx-auto mb-2">
-     <div class="flex justify-center items-center">
-        <i class="fa-solid fa-envelope text-2xl mr-1"></i><span>asif26679@gmail.com</span>
-     </div>
-    </div>
-    <div class="flex justify-between text-center border-t border-gray-400 mx-[10%] mt-12 py-6">
-        <p> &copy;2025 Asif Ali. All rights reserved.</p>
-        <ul class="flex gap-4">
-            <li><a href="https"><i class="fa-brands fa-instagram text-3xl"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/mohd-asif-ali-8b4bb721a/" target="_blank"><i class="fa-brands fa-linkedin text-3xl"></i></a></li>
-            <li><a href="https://github.com/Asif26679" target="_blank"><i class="fa-brands fa-github text-3xl"></i></a></li>
-            <li><a href=""><i class="fa-solid fa-phone text-3xl"></i></a></li>
-        </ul>
-    </div>
-  </div>  
+                 <!-------Footer---->
+<div class="mt-20">
+  <div class="text-center">
+   <img src="colorful-bird-illustration-gradient_343694-1741.avif" alt="" class="w-36 mx-auto mb-2">
+   <div class="flex justify-center items-center">
+      <i class="fa-solid fa-envelope text-2xl mr-1"></i><span>asif26679@gmail.com</span>
+   </div>
+  </div>
+  <div class="flex justify-between text-center border-t border-gray-400 mx-[10%] mt-12 py-6">
+      <p> &copy;2025 Asif Ali. All rights reserved.</p>
+      <ul class="flex gap-4">
+          <li><a href="https"><i class="fa-brands fa-instagram text-3xl"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/mohd-asif-ali-8b4bb721a/" target="_blank"><i class="fa-brands fa-linkedin text-3xl"></i></a></li>
+          <li><a href="https://github.com/Asif26679" target="_blank"><i class="fa-brands fa-github text-3xl"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-phone text-3xl"></i></a></li>
+      </ul>
+  </div>
+</div>  
 
-  <!----Font Awesome----------->
-  <script src="https://kit.fontawesome.com/f2641c7a0e.js" crossorigin="anonymous"></script>
-  <!----------My JS File----------------->
-  <script src="script.js"></script>
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-          strings: ['Web Developer....', 'Web Designer....','UI/UX...'],
-          typeSpeed: 50,
-        });
-      </script>
+<!----Font Awesome----------->
+<script src="https://kit.fontawesome.com/f2641c7a0e.js" crossorigin="anonymous"></script>
+<!----------My JS File----------------->
+<script src="script.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+      var typed = new Typed('#element', {
+        strings: ['Web Developer....', 'Web Designer....','UI/UX...'],
+        typeSpeed: 50,
+      });
+    </script>
+  </div>
+    
       
 </body>
 </html>
