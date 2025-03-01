@@ -50,6 +50,12 @@ document.addEventListener("DOMContentLoaded",function(){
     let text=document.querySelector('.text')
     let progress=0;
     let interval=setInterval(()=>{
+        if(window.innerWidth<=768){
+            ProgressText.style.fontSize="55px";
+            text.style.fontSize="15px"
+            text.style.marginLeft="80px"
+            
+        }
         progress+=1;
         ProgressText.innerHTML=progress+"%";
         progressCircle.style.strokeDashoffset=502-(502*progress)/100;
