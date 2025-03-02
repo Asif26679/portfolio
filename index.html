@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asif Ali</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <script src="tailwind.confiq.js"></script>
+  
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     
@@ -13,15 +13,6 @@
   
 </head>
 <body class="">
-  <div id="loadingScreen">
-    <div class="loader">
-    <svg width="200" height="200">
-      <circle cx="100" cy="100" r="80" stroke="#ccc" stroke-width="15" fill="none"/>
-      <circle id="progress-circle" cx="100" cy="100" r="80" stroke="blue" stroke-width="10" fill="none" stroke-dasharray="502" stoke-dashoffset="502"/>
-    </svg>
-  </div>
-    <p id="progress-text">0%</p> <span id="progress-text" class="text" style="font-family: 'Courier New', Courier, monospace; margin-left: 150px;" > Please wait!!....</span>
-  </div>
   <!--------Main Content-------------->
   <div id="content">
     <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-1 flex items-center justify-between z-50 bg-slate-300">
@@ -54,7 +45,7 @@
 
              <!-----------Header Section------------->
 
- <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+ <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 hiddenn">
    <img src="ai-generated-8329596_1280.webp" alt="" class="rounded-full w-32">
    <h1 class="text-2xl sm:text-3xl lg:text-[70px]" id="name">Hello, I am Asif</h1><span id="element" class="text-4xl"></span>
    <p class="max-w-2xl mx-auto">Hello, I am Front-end web developer </p>
@@ -67,19 +58,19 @@
                   <!---------ABout Me---------------------------------->
 
 <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
-  <h4 class="text-center mb-2 text-l">Introduction</h4>
-  <h2 class="text-center text-5xl">About Me</h2>
+  <h4 class="text-center mb-2 text-l hiddenn">Introduction</h4>
+  <h2 class="text-center text-5xl hiddenn">About Me</h2>
   <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
       <div class="max-w-max mx-auto relative">
-     <img src="developer-8764528_1280.webp" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
+     <img src="developer-8764528_1280.webp" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none hiddenn">
       </div>
       <div class="flex-1">
-         <p class="mb-10 max-w-2xl">I'm a Frontend Focused Web Developer building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.
+         <p class="mb-10 max-w-2xl hiddenn">I'm a Frontend Focused Web Developer building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.
 
           I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin and Instagram where I post useful content related to Web Development and Programming
           
           I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
-         <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+         <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl hiddenn">
 
              <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#007BFF] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] text-wrap"><i class="fa-solid fa-code  mt-3 text-3xl"></i>
              <h3 class="my-4  text-wrap font-semibold ">Languages</h3>
@@ -94,8 +85,8 @@
                   <p class="text-gray-600 text-sm">2 Years</p>
                   </li>
          </ul>
-         <h4 class="my-6 text-gray-700">Tools i use</h4>
-         <ul class="flex items-center gap-3 sm:gap-5">
+         <h4 class="my-6 text-gray-700 hiddenn">Tools i use</h4>
+         <ul class="flex items-center gap-3 sm:gap-5 hiddenn">
           <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer  hover:bg-[#e3a8f8] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] duration-500" ><img src="figma.jpg.avif" alt="" class="h-12"></li>
           <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] duration-500" ><img src="git.png" alt="" class="h-12"></li>
           <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] duration-500" ><img src="node.png" alt="" class="h-12"></li>
@@ -107,12 +98,12 @@
 </div>
 
              <!--------------------Services--------------------->
- <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
-  <h4 class="text-center mb-2 text-l">What i offer</h4>
-  <h2 class="text-center text-5xl">My Services</h2>
+ <div id="services" class="w-full px-[12%] py-10 scroll-mt-20" class="hiddenn">
+  <h4 class="text-center mb-2 text-l hiddenn">What i offer</h4>
+  <h2 class="text-center text-5xl hiddenn">My Services</h2>
   
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10">
-      <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#e49dfd] hover:-translate-y-1 duration-500">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10 hiddenn">
+      <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#e49dfd] hover:-translate-y-1 duration-500 ">
           <img src="design.jpg" alt="" class="w-20">
           <h3 class="text-lg my-4 text-gray-700">Website Design</h3>
           <p>I create modern, responsive, and visually appealing websites that enhance user experience and engagement.
@@ -155,10 +146,9 @@
  </div>
 
                             <!--My Work---->
-<div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
-  <h2 class="text-center text-5xl">My Latest Work</h2>
-  
-              <div class="wrapper">
+<div id="work" class="w-full px-[12%] py-10 scroll-mt-20" class="hidden">
+  <h2 class="text-center text-5xl hiddenn">My Latest Work</h2>
+              <div class="wrapper hiddenn">
                 <div class="box-area">
                   <div class="box">
                     <img src="weather.webp" alt="">
@@ -197,38 +187,38 @@
               </div>
    
   </div>
-  <a href="#" class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500">Show more... <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
+  <a href="#" class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500 hiddenn">Show more... <span><i class="fa-solid fa-arrow-right w-3 "></i></span></a>
 </div>
 
                 <!------------------Contact Me--------------->
 <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('')]">
-  <h2 class="text-center text-5xl">Get in touch</h2>
-  <p class="text-center p-6 text-gray-700">You can connect me and ask any queries regarding to any work</p>
+  <h2 class="text-center text-5xl hiddenn">Get in touch</h2>
+  <p class="text-center p-6 text-gray-700 hiddenn">You can connect me and ask any queries regarding to any work</p>
   <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
 
     <input type="hidden" name="access_key" value="9f003779-9185-4912-9511-bae75c4803f5">
-      <div class=" grid grid-cols-auto gap-6 mt-10 mb-8">
+      <div class=" grid grid-cols-auto gap-6 mt-10 mb-8 hiddenn">
           <input type="text" placeholder="Enter Your Name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required name="name">
           <input type="email" placeholder="Enter Your Email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required name="email">
       </div>
-      <textarea  rows="6" placeholder="Please! Enter Your Message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6" required name="message"></textarea>
-      <button class="py-3 px-8 w-max flex items-center justify-center gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 cursor-pointer">Send
+      <textarea  rows="6" placeholder="Please! Enter Your Message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 hiddenn" required name="message"></textarea>
+      <button class="py-3 px-8 w-max flex items-center justify-center gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 cursor-pointer hiddenn">Send
           <img src="2343641.png" alt="" class="w-6">
       </button>
   </form>
   <div class="rounded-xl flex justify-center items-center mt-5">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16574.39497176886!2d77.2963636416862!3d28.5728462420177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4767689a381%3A0x83aeae3e998c214d!2sBatla%20House%2C%20Okhla%2C%20New%20Delhi%2C%20Delhi%20110025!5e0!3m2!1sen!2sin!4v1740813288338!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg shadow-[2px_0px_2px_2px_#000] h-80"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16574.39497176886!2d77.2963636416862!3d28.5728462420177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4767689a381%3A0x83aeae3e998c214d!2sBatla%20House%2C%20Okhla%2C%20New%20Delhi%2C%20Delhi%20110025!5e0!3m2!1sen!2sin!4v1740813288338!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg shadow-[2px_0px_2px_2px_#000] h-80 hiddenn"></iframe>
   </div>
 </div>
                  <!-------Footer---->
 <div class="mt-20">
-  <div class="text-center">
+  <div class="text-center hiddenn">
    <img src="colorful-bird-illustration-gradient_343694-1741.avif" alt="" class="w-36 mx-auto mb-2">
    <div class="flex justify-center items-center">
       <i class="fa-solid fa-envelope text-2xl mr-1"></i><span>asif26679@gmail.com</span>
    </div>
   </div>
-  <div class="flex justify-between text-center border-t border-gray-400 mx-[10%] mt-12 py-6">
+  <div class="flex justify-between text-center border-t border-gray-400 mx-[10%] mt-12 py-6 hiddenn">
       <p> &copy;2025 Asif Ali. All rights reserved.</p>
       <ul class="flex gap-4">
           <li><a href="https"><i class="fa-brands fa-instagram text-3xl"></i></a></li>
@@ -246,12 +236,11 @@
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
       var typed = new Typed('#element', {
-        strings: ['Web Developer....', 'Web Designer....','UI/UX...'],
-        typeSpeed: 50,
-      });
+          strings: ['Web Developer....', 'Web Designer....','Web Developer....'],
+          typeSpeed: 100,
+        });
+        
     </script>
   </div>
-    
-      
 </body>
 </html>
