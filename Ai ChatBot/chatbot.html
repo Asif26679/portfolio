@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI ChatBot</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_drop_down" />
+    
+    
+    <link rel="stylesheet" href="output.css">
+    
+
+</head>
+<body class="flex items-center justify-center min-h-screen bg-slate-400">
+
+    <!------ChatBot PopUpdiv------------------>
+   <div class="w-[420px] bg-white overflow-hidden border rounded-xl
+    shadow-2xl relative">
+    <!-------------ChatbotHeader---------------------->
+    <div class="flex items-center justify-between bg-slate-800 p-4 text-white">
+        <div>
+            <h2 class="text-2xl">ChatBot</h2>
+        </div>
+        <button class="border-none text-white h-10 w-10 border rounded-3xl text-center hover:bg-slate-900 transition-all duration-200 ease-in cursor-pointer">
+
+            <span class="material-symbols-outlined mt-1">
+                arrow_drop_down
+                </span>
+
+        </button>
+    </div>
+    <!----ChatBot Body--------------->
+    <div class="p-6 flex gap-5 h-[480px] mb-20 flex-col overflow-y-auto" id="chatBody">
+        <!------ChatBot Msg---------------------->
+        <div class="p-3 bg-teal-100 rounded-md max-w-[75%] shadow-lg flex gap-2">
+           <div class="flex items-center justify-center">
+               <i class="fa-solid fa-robot text-2xl mr-2 "></i>
+           </div>
+            Hey there <br> How Can I help you today?
+        </div>
+        <!-----------User Message-------------------->
+        <!-- <div class="p-3  bg-slate-700 rounded-md max-w-[75%] self-end shadow-lg text-white">
+            <div class="flex-col items-end" id="default_message"></div>
+        </div> -->
+        <!------------Thinking Robot--------------->
+        <div class="flex gap-2 items-center hidden">
+            <i class="fa-solid fa-robot text-2xl mr-2"></i>
+            <div class="flex justify-center items-center gap-1 bg-teal-100 rounded-lg h-10 w-10  animate-pulse duration-150 ease-out infinite">
+                <div class="h-1 w-1 rounded-full bg-slate-900"></div>
+                <div class="h-1 w-1 rounded-full bg-slate-900"></div>
+                <div class="h-1 w-1 rounded-full bg-slate-900"></div>
+            </div>
+        </div>
+    </div>
+        <!-----Chat Footer------------------>
+        <div class="absolute bottom-0 w-full bg-white p-4">
+            <form action="" class="flex items-center bg-white rounded-3xl outline outline-auto outline-gray-200">
+                <textarea placeholder="Message" class="border border-none outline-none h-[47px] w-[100%] resize-none text-sm pt-[14px] pr-0 pb-[13px] pl-[18px] border-inherit" required id="inputBox"></textarea>
+                <div class="flex items-center self-end pr-1 h-[47px] gap-1">
+                    <button type="button" class="h-[35px] w-[35px] cursor-pointer bg-blue-100 rounded-3xl hover:bg-blue-200">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </button>
+                    <div class="file-upload-wrapper">
+                        <input type="file" accept="images/*" id="file-input" hidden>
+                        <button type="button" class="h-[35px] w-[35px] cursor-pointer bg-blue-100 rounded-3xl hover:bg-blue-200" id="file-upload">
+                            <i class="fa-solid fa-paperclip text-blue-400"></i>
+                        </button>
+                    </div>
+                    <button type="submit" class="h-[35px] w-[35px] cursor-pointer bg-blue-500 rounded-3xl hover:bg-blue-800" id="send"> 
+                        <i class="fa-solid fa-arrow-up text-blue-800 hover:text-black"></i>
+                    </button>
+                    
+                </div>
+                </form>
+        </div>
+    </div>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+
+   <script src="https://kit.fontawesome.com/f2641c7a0e.js" crossorigin="anonymous"></script>
+</body>
+</html>
