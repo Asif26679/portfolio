@@ -19,6 +19,9 @@
         font-size: 1.5rem;
         font-weight: 600;
     }
+    .overlay a{
+        margin-top: 5px;
+    }
 }
                   /* Main Line of the page */
 #name{
@@ -124,7 +127,7 @@ backdrop-filter: blur(10px);
     margin-top: 10px;
     color: #262626;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 10px;
     background: #ffff;
     border-radius: 50px;
     padding: 5px 15px;
