@@ -19,8 +19,24 @@
         font-size: 1.5rem;
         font-weight: 600;
     }
-    .overlay a{
-        margin-top: 5px;
+    
+    .overlay a {
+        position: absolute; /* ✅ Keeps the button fixed inside overlay */
+        bottom: 80px; /* ✅ Adjusts position */
+        left: 50%;
+        opacity: 0.5;
+        transform: translateX(-50%); /* ✅ Centers the button */
+        margin-top: 0; /* Remove margin that pushes it down */
+        color: #262626;
+        text-decoration: none;
+        font-size: 12px;
+        background: #fff;
+        border-radius: 50px;
+        padding: 8px 15px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .overlay a :hover{
+         opacity: 1;
     }
 }
                   /* Main Line of the page */
