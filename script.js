@@ -42,12 +42,13 @@ const observer=new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
         console.log(entry)
         if(entry.isIntersecting){
-            entry.target.classList.add('show')
-        }else{
-            entry.target.classList.remove('.show')
+            entry.target.classList.add('show');
+            setTimeout(()=>{
+                entry.target.classList.remove('.show')
+            },500)
         }
     })
-})
+},{threshold:0.1});
 
 const hiddenElements=document.querySelectorAll(".hiddenn");
 
