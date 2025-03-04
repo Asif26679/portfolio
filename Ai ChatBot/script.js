@@ -2,7 +2,7 @@ let inputVal=document.querySelector('#inputBox');
 const chatBody=document.querySelector("#chatBody");
 const sendBtn=document.querySelector("#send")
 const API_KEY="AIzaSyDH3cf5S1piQhed664lWHZmsmWBjStfjkk";
-const API_URL=`https:generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+const API_URL=`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
 const userData={
     file:{
@@ -41,7 +41,7 @@ const showTypingIndicator = () => {
          console.log("Bot Response:", data);
          return data.candidates?.[0]?.content?.parts?.[0]?.text || "Sorry, I couldn't understand.";
      } catch (error) {
-         console.error("Error fetching bot response:", error.message);
+        //  console.error("Error fetching bot response:", error.message);
          return "Oops! Something went wrong.";
      }
  };
