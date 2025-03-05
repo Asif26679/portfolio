@@ -1,0 +1,14 @@
+em-emoji-picker{
+    position: absolute;
+    left: 50%;
+    top: -337px;
+    width: 100%;
+    max-width: 350px;
+    visibility: hidden;
+    max-height: 330px;
+    transform: translateX(-50%);
+}
+
+body.emoji-picker em-emoji-picker{
+    visibility: visible;
+}

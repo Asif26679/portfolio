@@ -123,3 +123,23 @@ fileInput.addEventListener("change",()=>{
     reader.readAsDataURL(file)
 })
 document.querySelector("#file-upload").addEventListener("click",()=>fileInput.click());
+
+const picker = new EmojiMart.Picker({
+    theme:"light",
+    skinTonePosition:"none",
+    previewPosition:"none",
+    onEmojiSelect:(emoji)=>{
+       const { selectionStart:start,selectionEnd:end }=inputVal;
+       inputVal.setRangeText(emoji.native,start,end,"end");
+       inputVal.focus();
+    }
+    ,onClickOutside:(e)=>{
+        if(e.target.id==="emoji"){
+            document.body.classList.toggle("emoji-picker")
+        }else{
+            document.body.classList.remove("emoji-picker")
+        }
+    }
+})
+
+document.querySelector(".chat-form").appendChild(picker)
