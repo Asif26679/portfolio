@@ -19,23 +19,23 @@ window.addEventListener('scroll',()=>{
     }
 })
 
-const theme=document.querySelector('#mode');
-const body=document.body;
-const navUL=document.querySelector('#navUl')
+// const theme=document.querySelector('#mode');
+// const body=document.body;
+// const navUL=document.querySelector('#navUl')
 
-theme.addEventListener('click',()=>{
-    body.classList.toggle('bg-[#112D5A]');
-    body.classList.toggle('text-white');
+// theme.addEventListener('click',()=>{
+//     body.classList.toggle('bg-[#112D5A]');
+//     body.classList.toggle('text-white');
     
-    if(theme.classList.contains('fa-moon')){
-        theme.classList.remove('fa-moon');
-        theme.classList.add('fa-sun');
-    }else{
-        theme.classList.remove('fa-sun');
-        theme.classList.add('fa-moon')
-    }
+//     if(theme.classList.contains('fa-moon')){
+//         theme.classList.remove('fa-moon');
+//         theme.classList.add('fa-sun');
+//     }else{
+//         theme.classList.remove('fa-sun');
+//         theme.classList.add('fa-moon')
+//     }
     
-})
+// })
 
 
 const observer=new IntersectionObserver((entries)=>{

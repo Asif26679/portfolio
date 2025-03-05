@@ -12,10 +12,11 @@
     
   
 </head>
-<body class="">
+<body style="background: rgb(17,26,33);
+background: linear-gradient(121deg, rgba(17,26,33,1) 0%, rgba(6,6,6,1) 98%);">
   <!--------Main Content-------------->
   <div id="content">
-    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-1 flex items-center justify-between z-50 bg-slate-300">
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-1 flex items-center justify-between z-50 bg-blue-800 border-white/40 shadow-blue-500/40">
       <!-- <h1 class="w-26 cursor-pointer mr-12 text-4xl " id="logo"></h1> -->
       <img class="w-26 cursor-pointer mr-12 w-16" src="Lgog/Adil (1).png" alt="">
       <ul class="hidden md:flex items-center gap-6 lg:gap-8  bg-none px-12 y-3   text-black" id="navUl">
@@ -26,7 +27,7 @@
       </ul>
       <div class="flex items-center gap-1">
           <button>
-              <i class="fa-solid fa-moon" id="mode"></i>
+              <i class="fa-solid fa-moon"></i>
           </button>
           <a href="#contact" class="hidden lg:flex md:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4" id="contact_btn">Contact <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
           <button class="block md:hidden ml-3" onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
@@ -47,48 +48,52 @@
              <!-----------Header Section------------->
 
  <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 hiddenn">
-   <img src="ai-generated-8329596_1280.webp" alt="" class="rounded-full w-32">
-   <h1 class="text-2xl sm:text-3xl lg:text-[70px]" id="name">Hello, I am Asif</h1><span id="element" class="text-4xl"></span>
-   <p class="max-w-2xl mx-auto">Hello, I am Front-end web developer </p>
-   <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+  <div class="max-w-3xl w-11/12 text-center mx-auto flex flex-col items-center justify-center gap-4 p-8 mt-3 rounded-2xl bg-blue/50 backdrop-blur-lg border border-white/40 shadow-lg shadow-blue-500/40" id="header_div">
+    <div class="absolute inset-0 bg-blue-500/30 rounded-2xl blur-xl opacity-30"></div>
+    <img src="ai-generated-8329596_1280.webp" alt="" class="rounded-full w-32 mt-3">
+    <h1 class="text-2xl sm:text-3xl lg:text-[70px]" id="name">Hello, I am Asif</h1><span id="element" class="text-4xl"></span>
+    <p class="max-w-2xl mx-auto text-white">Hello, I am Front-end web developer </p>
+    <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
       <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] items-center gap-2 text-white">Contact Me <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
       <a href="myresume.pdf" download class="px-10 py-3 border rounded-full border-gray-500  items-center gap-2 bg-gray-400">Resume <span><i class="fa-solid fa-circle-down"></i></span></a>
-   </div>
+    </div>
+  </div>
  </div>  
 
                   <!---------ABout Me---------------------------------->
 
 <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
-  <h4 class="text-center mb-2 text-l hiddenn">Introduction</h4>
-  <h2 class="text-center text-5xl hiddenn">About Me</h2>
+  <h4 class="text-center mb-2 text-l hiddenn text-white">Introduction</h4>
+  <h2 class="text-center text-5xl hiddenn text-white">About Me</h2>
   <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
       <div class="max-w-max mx-auto relative">
      <img src="developer-8764528_1280.webp" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none hiddenn">
       </div>
       <div class="flex-1">
-         <p class="mb-10 max-w-2xl hiddenn">I'm a Frontend Focused Web Developer building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.
+         <p class="mb-10 max-w-2xl hiddenn text-white">I'm a Frontend Focused Web Developer building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.
 
           I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin and Instagram where I post useful content related to Web Development and Programming
           
           I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
          <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl hiddenn">
 
-             <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#007BFF] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] text-wrap"><i class="fa-solid fa-code  mt-3 text-3xl"></i>
-             <h3 class="my-4  text-wrap font-semibold ">Languages</h3>
-             <p class="text-gray-600 text-sm">HTML,CSS,JavaScript,React</p>
+             <li class=" border-gray-400 rounded-xl p-6 cursor-pointer hover:rounded-2xl hover: bg-blue/50 hover: backdrop-blur-lg  border border-white/40 shadow-lg  shadow-blue-500/40 hover:-translate-y-1 duration-500  text-wrap"><i class="fa-solid fa-code  mt-3 text-3xl text-white"></i>
+             <h3 class="my-4  text-wrap font-semibold text-white">Languages</h3>
+             <p class="text-white text-sm">HTML,CSS,JavaScript,React</p>
              </li>
-             <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#96f0cc] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"><i class="fa-solid fa-school  mt-3 text-3xl"></i>
-              <h3 class="my-4 font-semibold ">Education</h3>
-              <p class="text-gray-600 text-sm">Bachelor of technology</p>
+             <li class=" border-gray-400 rounded-xl p-6 cursor-pointer hover:rounded-2xl bg-blue/50 backdrop-blur-lg border border-white/40 shadow-lg shadow-blue-500/40 hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"><i class="fa-solid fa-school  mt-3 text-3xl text-white"></i>
+              <h3 class="my-4 font-semibold text-white ">Education</h3>
+              <p class="text-white text-sm">Bachelor of technology</p>
               </li>
-              <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#8aeef2] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"><i class="fa-solid fa-briefcase mt-3 text-3xl"></i>
-                  <h3 class="my-4 font-semibold ">Experience</h3>
-                  <p class="text-gray-600 text-sm">2 Years</p>
+              <li class=" border-gray-400 rounded-xl p-6 cursor-pointer hover:rounded-2xl bg-blue/50 backdrop-blur-lg border border-white/40 shadow-lg shadow-blue-500/40 hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"><i class="fa-solid fa-briefcase mt-3 text-3xl text-white"></i>
+                  <h3 class="my-4 font-semibold text-white">Experience</h3>
+                  <p class="text-white text-sm">2 Years</p>
                   </li>
          </ul>
-         <h4 class="my-6 text-gray-700 hiddenn">Tools i use</h4>
+         <h4 class="my-6 hiddenn text-white">Tools i use</h4>
          <ul class="flex items-center gap-3 sm:gap-5 hiddenn">
-          <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer  hover:bg-[#e3a8f8] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] duration-500" ><img src="figma.jpg.avif" alt="" class="h-12"></li>
+          <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border-gray-400 rounded-lg cursor-pointer  hover:rounded-2xl border hover:shadow-[4px_4px_0_#000] duration-500" ><img src="figma.jpg.avif" alt="" class="h-12"></li>
+
           <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] duration-500" ><img src="git.png" alt="" class="h-12"></li>
           <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] duration-500" ><img src="node.png" alt="" class="h-12"></li>
           <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] duration-500" ><img src="vs.png" alt="" class="h-12"></li>
@@ -100,32 +105,32 @@
 
              <!--------------------Services--------------------->
  <div id="services" class="w-full px-[12%] py-10 scroll-mt-20" class="hiddenn">
-  <h4 class="text-center mb-2 text-l hiddenn">What i offer</h4>
-  <h2 class="text-center text-5xl hiddenn">My Services</h2>
+  <h4 class="text-center mb-2 text-l hiddenn text-white">What i offer</h4>
+  <h2 class="text-center text-5xl hiddenn text-white">My Services</h2>
   
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10 hiddenn">
-      <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#e49dfd] hover:-translate-y-1 duration-500 ">
+      <div class=" border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:rounded-2xl bg-blue/50 backdrop-blur-lg border border-white/40 shadow-lg shadow-blue-500/40 hover:-translate-y-1 duration-500 text-white ">
           <img src="design.jpg" alt="" class="w-20">
-          <h3 class="text-lg my-4 text-gray-700">Website Design</h3>
+          <h3 class="text-lg my-4 text-white">Website Design</h3>
           <p>I create modern, responsive, and visually appealing websites that enhance user experience and engagement.
             Designing clean, intuitive, and high-performing websites that align with your brand's vision.
             Bringing creativity and functionality together to craft stunning web experiences,
             Transforming ideas into sleek, responsive, and user-friendly websites.
             </p>
-          <a href="" class="flex items-center gap-2 text-sm mt-5">Read More <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
+          <a href="" class="flex items-center gap-2 text-sm mt-5 text-white">Read More <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
       </div>
-      <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#e4aff7] hover:-translate-y-1 duration-500">
+      <div class=" border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:rounded-2xl bg-blue/50 backdrop-blur-lg border border-white/40 shadow-lg shadow-blue-500/40 hover:-translate-y-1 duration-500 text-white">
           <img src="apple-developer-app-128x128_2x.png" alt="" class="w-20">
-          <h3 class="text-lg my-4 text-gray-700">App Development</h3>
+          <h3 class="text-lg my-4 text-white">App Development</h3>
           <p>"Building high-performance, user-friendly, and scalable applications for all platforms."
             "Turning ideas into functional, sleek, and engaging mobile & web applications."
             "Developing innovative apps with a focus on speed, security, and seamless experience."
             "Creating intuitive, efficient, and feature-rich applications that users love</p>
-          <a href="" class="flex items-center gap-2 text-sm mt-5">Read More <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
+          <a href="" class="flex items-center gap-2 text-sm mt-5 text-white">Read More <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
       </div>
-      <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#704180] hover:-translate-y-1 duration-500">
+      <div class=" border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:rounded-2xl bg-blue/50 backdrop-blur-lg border border-white/40 shadow-lg shadow-blue-500/40 hover:-translate-y-1 duration-500 text-white">
           <img src="graphics.png" alt="" class="w-20">
-          <h3 class="text-lg my-4 text-gray-700">Graphic Design</h3>
+          <h3 class="text-lg my-4 text-white">Graphic Design</h3>
           <p>🎨Bringing ideas to life with stunning and creative visual designs. <br>
             🖌️ Crafting eye-catching graphics that enhance brand identity and engagement. <br>
             💡 Blending creativity with strategy to design visuals that tell a story. <br>
@@ -133,9 +138,9 @@
             🚀 Designing with precision, creativity, and a focus on brand consistency.</p>
           <a href="" class="flex items-center gap-2 text-sm mt-5">Read More <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
       </div>
-      <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#dca2f1] hover:-translate-y-1 duration-500">
+      <div class=" border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:rounded-2xl bg-blue/50 backdrop-blur-lg border border-white/40 shadow-lg shadow-blue-500/40 hover:-translate-y-1 duration-500 text-white">
           <img src="ui.avif" alt="" class="w-20">
-          <h3 class="text-lg my-4 text-gray-700">UI/UX</h3>
+          <h3 class="text-lg my-4 text-white">UI/UX</h3>
           <p> Crafting seamless and visually appealing user experiences with intuitive design.
             Designing user-friendly interfaces that enhance engagement and usability.
             Blending aesthetics with functionality to create interactive and accessible designs.
@@ -148,7 +153,7 @@
 
                             <!--My Work---->
 <div id="work" class="w-full px-[12%] py-10 scroll-mt-20" class="hidden">
-  <h2 class="text-center text-5xl hiddenn">My Latest Work</h2>
+  <h2 class="text-center text-5xl hiddenn text-white">My Latest Work</h2>
               <div class="wrapper hiddenn">
                 <div class="box-area">
                   <div class="box">
@@ -188,13 +193,13 @@
               </div>
    
   </div>
-  <a href="#" class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500 hiddenn">Show more... <span><i class="fa-solid fa-arrow-right w-3 "></i></span></a>
+  <a href="#" class="w-max flex items-center justify-center gap-2 text-white border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500 hiddenn hover:text-black">Show more... <span><i class="fa-solid fa-arrow-right w-3 "></i></span></a>
 </div>
 
                 <!------------------Contact Me--------------->
 <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('')]">
-  <h2 class="text-center text-5xl hiddenn">Get in touch</h2>
-  <p class="text-center p-6 text-gray-700 hiddenn">You can connect me and ask any queries regarding to any work</p>
+  <h2 class="text-center text-5xl hiddenn text-white">Get in touch</h2>
+  <p class="text-center p-6 text-white hiddenn">You can connect me and ask any queries regarding to any work</p>
   <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
 
     <input type="hidden" name="access_key" value="9f003779-9185-4912-9511-bae75c4803f5">
@@ -203,7 +208,7 @@
           <input type="email" placeholder="Enter Your Email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required name="email">
       </div>
       <textarea  rows="6" placeholder="Please! Enter Your Message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 hiddenn" required name="message"></textarea>
-      <button class="py-3 px-8 w-max flex items-center justify-center gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 cursor-pointer hiddenn">Send
+      <button class="py-3 px-8 w-max flex items-center justify-center gap-2 bg-white/80 text-black rounded-full mx-auto hover:bg-white duration-500 cursor-pointer hiddenn">Send
           <img src="2343641.png" alt="" class="w-6">
       </button>
   </form>
@@ -216,16 +221,16 @@
   <div class="text-center hiddenn">
    <img src="Lgog/Adil (1).png" alt="" class="w-36 mx-auto mb-2">
    <div class="flex justify-center items-center">
-      <i class="fa-solid fa-envelope text-2xl mr-1"></i><span>asif26679@gmail.com</span>
+      <i class="fa-solid fa-envelope text-2xl mr-1 text-white"></i><span class="text-white">asif26679@gmail.com</span>
    </div>
   </div>
   <div class="flex justify-between text-center border-t border-gray-400 mx-[10%] mt-12 py-6 hiddenn">
-      <p class="text-xs lg:text-xl"> &copy;2025 Asif Ali. All rights reserved.</p>
+      <p class="text-xs lg:text-xl text-white"> &copy;2025 Asif Ali. All rights reserved.</p>
       <ul class="flex gap-4">
-          <li><a href="https"><i class="fa-brands fa-instagram text-xl lg:text-3xl"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/mohd-asif-ali-8b4bb721a/" target="_blank"><i class="fa-brands fa-linkedin text-xl lg:text-3xl"></i></a></li>
-          <li><a href="https://github.com/Asif26679" target="_blank"><i class="fa-brands fa-github text-xl lg:text-3xl"></i></a></li>
-          <li><a href=""><i class="fa-solid fa-phone text-xl lg:text-3xl"></i></a></li>
+          <li><a href="https"><i class="fa-brands fa-instagram text-xl lg:text-3xl text-white"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/mohd-asif-ali-8b4bb721a/" target="_blank"><i class="fa-brands fa-linkedin text-xl lg:text-3xl text-white"></i></a></li>
+          <li><a href="https://github.com/Asif26679" target="_blank"><i class="fa-brands fa-github text-xl lg:text-3xl text-white"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-phone text-xl lg:text-3xl text-white"></i></a></li>
       </ul>
   </div>
 </div>  
