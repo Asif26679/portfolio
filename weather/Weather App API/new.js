@@ -87,3 +87,16 @@ searchBtn.addEventListener("click",()=>{
         
     }
 })
+
+window.addEventListener("keydown"==="Enter",()=>{
+    
+    if(cityname === ""){
+        alert('Please enter city name');
+    }
+    else{
+        city1.classList.remove("hide")
+        checkWeather(search.value);
+        
+    }
+})
+

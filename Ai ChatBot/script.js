@@ -55,9 +55,8 @@ const createMessageElement=(content,classes)=>{
 } 
 const createMessageElementBot=(content,classes)=>{
     const div=document.createElement("div");
-    div.className = "p-3 bg-blue-200 rounded-md max-w-[75%]  shadow-lg  " + classes;
+    div.className = "p-3 bg-blue-200 rounded-md max-w-[75%] shadow-lg" + classes;
     div.innerHTML=content;
-
     return div;
 } 
 const handleOngoingMsg = async (userMessage) => {
@@ -73,7 +72,6 @@ const handleOngoingMsg = async (userMessage) => {
 
     // 🔹 Wait for Bot Response
     const botResponse = await generateBotResponse(userMessage);
-
     // Remove Typing Indicator
     chatBody.removeChild(typingIndicator);
 
@@ -85,7 +83,7 @@ const handleOngoingMsg = async (userMessage) => {
     
     setTimeout(() => {
         botMsgElement.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 100);
+    }, 200);
     inputVal.value = ""; // Clear Input
 };
 
