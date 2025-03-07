@@ -1,4 +1,4 @@
-const API="http://api.weatherapi.com/v1/current.json?key=bd1f66041cca4648a6b200920250603&q=";
+const API="https://api.weatherapi.com/v1/current.json?key=bd1f66041cca4648a6b200920250603&q=";
 
 
 async function updateWeather(city){
