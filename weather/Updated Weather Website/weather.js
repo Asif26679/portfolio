@@ -25,10 +25,8 @@ let time=document.querySelector(".time");
 let date=document.querySelector(".date")
 let conditionDisplay=document.querySelector(".weatherImage");
 let conditions=document.querySelector(".conditions");
+let weatherApp=document.querySelector(".weatherapp")
 let tempreature=document.querySelector(".tempreature");
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
     displayWeather("New Delhi");
@@ -59,6 +57,7 @@ document.querySelector("#patna").addEventListener("click",()=>{
             humidity.innerHTML=`${weatherdata.current.humidity}%`;
             wind.innerHTML=`${weatherdata.current.wind_kph}Km/h`
 
+            
         }
     }).catch(function(err){
         alert("City name is wrong");
@@ -95,7 +94,17 @@ let seconds=currentTime.getSeconds();
         }
         time.innerHTML=`${hours}:`;
         mintue.innerHTML=`${minutes}:`;
-        secs.innerHTML=seconds
-
+        secs.innerHTML=seconds;
 },1000)
 
+function updateBackgground(){
+    let timing=new Date().getHours();
+    console.log(timing);
+    if(timing>=6 && timing<=18 ){
+        weatherApp.style.backgroundImage="url('day.jpg')";
+    }
+    else{
+        weatherApp.style.backgroundImage="url('nightt.jpg')"
+    }
+}
+updateBackgground();
