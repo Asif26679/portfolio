@@ -41,6 +41,9 @@
     .overlay a :hover{
          opacity: 1;
     }
+    .box{
+        height: 250px;
+    }
 }
                   /* Main Line of the page */
 #name{
