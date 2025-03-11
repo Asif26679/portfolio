@@ -99,7 +99,6 @@ let seconds=currentTime.getSeconds();
 
 function updateBackgground(){
     let timing=new Date().getHours();
-    console.log(timing);
     if(timing>=6 && timing<=18 ){
         weatherApp.style.backgroundImage="url('day.jpg')";
     }
@@ -108,3 +107,20 @@ function updateBackgground(){
     }
 }
 updateBackgground();
+
+
+let api="https://api.ipgeolocation.io/ipgeo?apiKey=";
+let apiKey="d9065510e7184365bf305199d637bcad";
+
+let locationCatch=document.querySelector(".locationCatch");
+
+locationCatch.addEventListener("click",(e)=>{
+    e.preventDefault();
+    console.log("clicked")
+    fetch(api+apiKey).then((response)=>response.json()).then((data)=>{
+        locationName=data.district;
+        cityName.innerHTML=locationName;
+        updateWeather(locationName);
+
+    })
+})
