@@ -178,3 +178,9 @@ backdrop-filter: blur(10px);
         transform: translateY(0);
     } 
 
+@font-face {
+    font-family: 'Lequire';
+    src: url('./font/Lequire.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
