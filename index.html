@@ -8,6 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- AOS Library -->
+   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
     
     
   
@@ -22,7 +25,7 @@ background: linear-gradient(121deg, rgba(17,26,33,1) 0%, rgba(6,6,6,1) 98%);">
       <ul class="hidden md:flex items-center gap-6 lg:gap-8  bg-none px-12 y-3   text-white" id="navUl">
           <li><a href="#top">Home</a></li>
           <li><a href="#about">About Me</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#work">My Work</a></li>
       </ul>
       <div class="flex items-center gap-1">
@@ -37,7 +40,7 @@ background: linear-gradient(121deg, rgba(17,26,33,1) 0%, rgba(6,6,6,1) 98%);">
           </div>
           <li><a href="#top" onclick="closeMenu()">Home</a></li>
           <li><a href="#about" onclick="closeMenu()">About Me</a></li>
-          <li><a href="#services" onclick="closeMenu()">Services</a></li>
+          <li><a href="#education" onclick="closeMenu()">Services</a></li>
           <li><a href="#work" onclick="closeMenu()">My Work</a></li> 
       </ul>
   </nav>
@@ -68,15 +71,13 @@ background: linear-gradient(121deg, rgba(17,26,33,1) 0%, rgba(6,6,6,1) 98%);">
       <div class="flex-1">
          <p class="mb-5 max-w-2xl hiddenn text-white">I'm a Frontend Focused Web Developer building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.
 
-  
-          
-          I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
+         I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
          
          <section class=" text-white py-16 px-4 hiddenn" id="about">
           <div class="max-w-6xl mx-auto">
            
-        
             <!-- Languages -->
+
             <div class="mb-10">
               <h3 class="text-xl font-semibold mb-4 text-teal-400">💻 Languages</h3>
               <div class="flex flex-wrap gap-8">
@@ -84,7 +85,6 @@ background: linear-gradient(121deg, rgba(17,26,33,1) 0%, rgba(6,6,6,1) 98%);">
                   <img src="javascript2.png" alt="C" class="h-10 mx-auto" />
                   <p class="mt-2">JavaScript</p>
                 </div>
-                
                 <div class="text-center">
                   <img src="CSS.svg" alt="HTML/CSS" class="h-10 mx-auto" />
                   <p class="mt-2">HTML/CSS</p>
@@ -162,52 +162,94 @@ background: linear-gradient(121deg, rgba(17,26,33,1) 0%, rgba(6,6,6,1) 98%);">
 </div>
 
              <!--------------------Services--------------------->
- <div id="services" class="w-full px-[12%] py-10 scroll-mt-20" class="hiddenn">
-  <h4 class="text-center mb-2 text-l hiddenn text-white">What i offer</h4>
-  <h2 class="text-center text-5xl hiddenn text-white">My Services</h2>
-  
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10 hiddenn">
-      <div class=" border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:rounded-2xl bg-blue/50 backdrop-blur-lg border border-white/40 shadow-lg shadow-blue-500/40 hover:-translate-y-1 duration-500 text-white ">
-          <img src="design.jpg" alt="" class="w-20">
-          <h3 class="text-lg my-4 text-white">Website Design</h3>
-          <p>I create modern, responsive, and visually appealing websites that enhance user experience and engagement.
-            Designing clean, intuitive, and high-performing websites that align with your brand's vision.
-            Bringing creativity and functionality together to craft stunning web experiences,
-            Transforming ideas into sleek, responsive, and user-friendly websites.
-            </p>
-          <a href="" class="flex items-center gap-2 text-sm mt-5 text-white">Read More <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
-      </div>
-      <div class=" border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:rounded-2xl bg-blue/50 backdrop-blur-lg border border-white/40 shadow-lg shadow-blue-500/40 hover:-translate-y-1 duration-500 text-white">
-          <img src="apple-developer-app-128x128_2x.png" alt="" class="w-20">
-          <h3 class="text-lg my-4 text-white">App Development</h3>
-          <p>Building high-performance, user-friendly, and scalable applications for all platforms.
-            Turning ideas into functional, sleek, and engaging mobile & web applications.
-            Developing innovative apps with a focus on speed, security, and seamless experience.
-            Creating intuitive, efficient, and feature-rich applications that users love</p>
-          <a href="" class="flex items-center gap-2 text-sm mt-5 text-white">Read More <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
-      </div>
-      <div class=" border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:rounded-2xl bg-blue/50 backdrop-blur-lg border border-white/40 shadow-lg shadow-blue-500/40 hover:-translate-y-1 duration-500 text-white">
-          <img src="graphics.png" alt="" class="w-20">
-          <h3 class="text-lg my-4 text-white">Graphic Design</h3>
-          <p>🎨Bringing ideas to life with stunning and creative visual designs. <br>
-            🖌️ Crafting eye-catching graphics that enhance brand identity and engagement. <br>
-            💡 Blending creativity with strategy to design visuals that tell a story. <br>
-            🔥 Transforming concepts into visually appealing and professional designs. <br>
-            🚀 Designing with precision, creativity, and a focus on brand consistency.</p>
-          <a href="" class="flex items-center gap-2 text-sm mt-5">Read More <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
-      </div>
-      <div class=" border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:rounded-2xl bg-blue/50 backdrop-blur-lg border border-white/40 shadow-lg shadow-blue-500/40 hover:-translate-y-1 duration-500 text-white">
-          <img src="ui.avif" alt="" class="w-20">
-          <h3 class="text-lg my-4 text-white">UI/UX</h3>
-          <p> Crafting seamless and visually appealing user experiences with intuitive design.
-            Designing user-friendly interfaces that enhance engagement and usability.
-            Blending aesthetics with functionality to create interactive and accessible designs.
-            Turning ideas into smooth, efficient, and visually stunning user experiences.
-            Creating digital experiences that are not just beautiful but also highly functional..</p>
-          <a href="" class="flex items-center gap-2 text-sm mt-5">Read More <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
-      </div>
-  </div>
- </div>
+             <section class=" text-white py-10 px-4" id="education">
+              <h2 class="text-3xl font-bold text-center mb-10">Education</h2>
+            
+              <div class="relative max-w-4xl mx-auto">
+                
+                <!-- Timeline line -->
+                <div class="absolute top-0 left-4 md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-[#00004B]"></div>
+            
+                <!-- Items -->
+                <div class="space-y-16">
+            
+                  <!-- Item 1 -->
+                  <div class="flex flex-col md:flex-row items-start relative ">
+                    <div class="w-6 h-6 bg-black border-4 border-[#00008B] rounded-full z-10 absolute left-[0.500rem] md:left-1/2 transform md:-translate-x-1/2 top-1 md:top-5"></div>
+
+            
+                    <div class="ml-10 md:ml-0 md:w-1/2 md:pr-8 order-2 md:order-1">
+                      <div class="relative bg-[#071c2f] p-5 rounded-lg before:absolute before:top-5 before:-left-4 md:before:-right-4 before:w-0 before:h-0 before:border-t-8 before:border-b-8 before:border-r-8 md:before:border-r-0 md:before:border-l-8 before:border-t-transparent before:border-b-transparent before:border-r-gray-700 md:before:border-l-gray-700 shadow-[0px_4px_0_#00004B] fade-right" data-aos="fade-right">
+                        <h3 class="text-2xl font-bold mb-2">Full Stack Web Development</h3>
+                        <p class="text-sm text-gray-300">Internshala | 2024 - 2025</p>
+                        <ul class="list-disc list-inside text-sm mt-2 space-y-1">
+                          <li>Learned HTML/CSS,JavaScript, React, Node.js, DBMS</li>
+                          <li>Developed a YouTube clone with responsive design and live API data.</li>
+                          <li>Build 5 Full Stack web pages</li>
+                          <li>Built interactive UIs using React and managed component state using hooks.</li>
+                          <li>Familiar with Git/GitHub, VS Code, and deployment on Vercel/Netlify.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="hidden md:block md:w-1/2 order-1 md:order-2"></div>
+                  </div>
+            
+                  <!-- Item 2 -->
+                  <div class="flex flex-col md:flex-row items-start relative">
+                    <div class="w-6 h-6 bg-black border-4 border-[#00008B] rounded-full z-10 absolute  left-[0.500rem] md:left-1/2 transform md:-translate-x-1/2 top-1 md:top-5"></div>
+            
+                    <div class="ml-10 md:hidden">
+                      <div class="relative bg-[#071c2f] p-5 rounded-lg before:absolute before:top-5 before:-left-4 before:w-0 before:h-0 before:border-t-8 before:border-b-8 before:border-r-8 before:border-t-transparent before:border-b-transparent before:border-r-gray-700 shadow-[0px_4px_0_#00004B]">
+                        <h3 class="text-2xl font-semibold mb-2">Bachelor of Technology</h3>
+                        <p class="text-sm text-gray-300">Maulana Abul Kalam Azad University | 2021 - 2024</p>
+                        <ul class="list-disc list-inside text-sm mt-2 mb-4">
+                          <li>Gained a strong foundation in Computer Science fundamentals including Data Structures, Algorithms, and Operating Systems.</li>
+                          <li>Worked on academic projects involving JavaScript, C++, or Python</li>
+                          <li>Collaborated in team-based mini projects and final year project involving real-world problem-solving. </li>
+                        </ul>
+                      </div>
+                    </div>
+            
+                    <div class="hidden md:block md:w-1/2 order-1"></div>
+            
+                    <div class="hidden md:block md:w-1/2 md:pl-8 order-2">
+                      <div class="relative bg-[#071c2f] p-5 rounded-lg shadow-[0px_4px_0_#00004B] before:absolute before:top-5 before:-left-4 before:w-0 before:h-0 before:border-t-8 before:border-b-8 before:border-r-8 before:border-t-transparent before:border-b-transparent before:border-r-gray-700" data-aos="fade-left">
+                        <h3 class="text-2xl font-bold mb-2">Bachelor of Technology</h3>
+                        <p class="text-sm text-gray-300">Maulana Abul Kalam Azad University | 2021 - 2024</p>
+                        <ul class="list-disc list-inside text-sm mt-2">
+                          <li>Gained a strong foundation in Computer Science fundamentals including Data Structures, Algorithms, and Operating Systems.</li>
+                          <li>Worked on academic projects involving JavaScript, C++, or Python</li>
+                          <li>Collaborated in team-based mini projects and final year project involving real-world problem-solving.
+
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Item 3 -->
+                  <div class="flex flex-col md:flex-row items-start relative">
+                    <div class="w-6 h-6 bg-black border-4 border-[#00008B] rounded-full z-10 absolute left-[0.500rem] md:left-1/2 transform md:-translate-x-1/2 top-1 md:top-5"></div>
+                    <div class="ml-10 md:ml-0 md:w-1/2 md:pr-8 order-2 md:order-1">
+                      <div class="relative bg-[#071c2f] p-5 rounded-lg shadow-[0px_4px_0_#00004B] before:absolute before:top-5 before:-left-4 md:before:-right-4 before:w-0 before:h-0 before:border-t-8 before:border-b-8 before:border-r-8 md:before:border-r-0 md:before:border-l-8 before:border-t-transparent before:border-b-transparent before:border-r-gray-700 md:before:border-l-gray-700" data-aos="fade-right">
+                        <h3 class="text-2xl font-bold mb-2">Diploma in Engineering(CSE)</h3>
+                        <p class="text-sm text-gray-300">Noida International University | 2018 - 2021</p>
+                        <ul class="list-disc list-inside text-sm mt-2">
+                          <li>Built foundational knowledge in Programming, Networking, and Computer Architecture.</li>
+                          <li>Participated in technical workshops and seminars to enhance practical skills.
+
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+            
+                    <div class="hidden md:block md:w-1/2 order-1 md:order-2"></div>
+                  </div>
+            
+                </div>
+              </div>
+            </section>
+            
 
                             <!--My Work---->
 <div id="work" class="w-full px-[12%] py-10 scroll-mt-20" class="hidden">
@@ -308,5 +350,10 @@ background: linear-gradient(121deg, rgba(17,26,33,1) 0%, rgba(6,6,6,1) 98%);">
         
     </script>
   </div>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>
