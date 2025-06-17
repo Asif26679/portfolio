@@ -47,7 +47,7 @@
 }
                   /* Main Line of the page */
 #name{
-  font-family: "VT323", monospace;
+  font-family: monospace;
   color:white;
   margin-bottom: 10px;
   font-weight: 400;
