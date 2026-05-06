@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asif Ali</title>
+  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- AOS Library -->
+   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    
+    
+  
+</head>
+<body style="background: rgb(17,26,33);
+background: linear-gradient(121deg, rgba(17,26,33,1) 0%, rgba(6,6,6,1) 98%);">
+  <!--------Main Content-------------->
+  <div id="content">
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-1 flex items-center justify-between z-50 bg-zinc-900 border-white/40 shadow-blue-500/40">
+      <!-- <h1 class="w-26 cursor-pointer mr-12 text-4xl " id="logo"></h1> -->
+      <img class="w-16 cursor-pointer mr-12 h-18" src="Lgog/Adil (1).png" alt="">
+      <ul class="hidden md:flex items-center gap-6 lg:gap-8  bg-none px-12 y-3   text-white" id="navUl">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#work">My Work</a></li>
+      </ul>
+      <div class="flex items-center gap-1">
+          <a href="#contact" class="hidden lg:flex md:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 text-white" id="contact_btn">Contact<span><i class="fa-solid fa-comment w-3 text-white"></i></span></a>
+          <button class="block md:hidden ml-3" onclick="openMenu()"><i class="fa-solid fa-bars text-white"></i></button>
+      </div>
+
+      <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen  transition duration-500 bg-green-200">
+
+          <div class="absolute right-6 top-6 " onclick="closeMenu()" >
+              <i class="fa-solid fa-xmark "></i>
+          </div>
+          <li><a href="#top" onclick="closeMenu()">Home</a></li>
+          <li><a href="#about" onclick="closeMenu()">About Me</a></li>
+          <li><a href="#education" onclick="closeMenu()">Services</a></li>
+          <li><a href="#work" onclick="closeMenu()">My Work</a></li> 
+      </ul>
+  </nav>
+
+             <!-----------Header Section------------->
+
+ <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 hiddenn">
+  <div class="max-w-3xl w-11/12 text-center mx-auto flex flex-col items-center justify-center gap-4 p-8 mt-3 rounded-2xl bg-blue/50 backdrop-blur-lg border border-white/40 shadow-lg shadow-blue-500/40" id="header_div">
+    <!-- <div class="absolute inset-0 bg-blue-500/30 rounded-2xl blur-xl opacity-30 z-0"></div> -->
+    <img src="ai-generated-8329596_1280.webp" alt="" class="rounded-full w-32 mt-3">
+    <h1 class="text-2xl sm:text-2xl lg:text-[50px]" id="name">Hello, I am Asif</h1><span id="element" class="text-4xl"></span>
+    <p class="max-w-2xl mx-auto text-white">I am Front-end web developer </p>
+    <div class="flex flex-col sm:flex-row items-center gap-4 mt-4  ">
+      <a href="#contact" class="px-10 py-3 border rounded-full bg-[#06111c] shadow-lg hover:shadow-blue-500/40 backdrop-blur-lg items-center gap-2 text-white hover:cursor-pointer">Contact Me <span><i class="fa-solid fa-arrow-right w-3"></i></span></a>
+      <a href="myreume.pdf" download class="px-10 py-3 border rounded-full border-gray-500  items-center gap-2 bg-gray-400 hover:cursor-pointer">Resume <span><i class="fa-solid fa-circle-down"></i></span></a>
+    </div>
+  </div>
+ </div>  
+
+                  <!---------ABout Me---------------------------------->
+
+<div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+  <h2 class="text-center text-5xl hiddenn text-white font-mono">About Me</h2>
+  <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-10">
+      <div class="max-w-max mx-auto relative">
+     <img src="developer-8764528_1280.webp" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none hiddenn">
+      </div>
+      <div class="flex-1">
+         <p class="mb-5 max-w-2xl hiddenn text-white">I'm a Frontend Focused Web Developer building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.
+
+         I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
+         
+         <section class=" text-white py-16 px-4 hiddenn" id="about">
+          <div class="max-w-6xl mx-auto">
+           
+            <!-- Languages -->
+
+            <div class="mb-10">
+              <h3 class="text-xl font-semibold mb-4 text-white">💻 Languages</h3>
+              <div class="flex flex-wrap gap-8">
+                <div class="text-center">
+                  <img src="javascript2.png" alt="C" class="h-10 mx-auto" />
+                  <p class="mt-2">JavaScript</p>
+                </div>
+                <div class="text-center">
+                  <img src="CSS.svg" alt="HTML/CSS" class="h-10 mx-auto" />
+                  <p class="mt-2">HTML/CSS</p>
+                </div>
+                <div class="text-center">
+                  <img src="Java.svg" alt="JavaScript" class="h-10 mx-auto" />
+                  <p class="mt-2">Java</p>
+                </div>
+                
+              </div>
+            </div>
+        
+            <!-- Web Development -->
+            <div class="mb-10">
+              <h3 class="text-xl font-semibold mb-4 text-white">🌐 Web Development</h3>
+              <div class="flex flex-wrap gap-8">
+                <div class="text-center">
+                  <img src="React.svg" alt="React" class="h-10 mx-auto" />
+                  <p class="mt-2">React</p>
+                </div>
+                <div class="text-center">
+                  <img src="Node.svg" alt="React" class="h-10 mx-auto" />
+                  <p class="mt-2">Node</p>
+                </div>
+                <div class="text-center">
+                  <img src="Redux.svg" alt="React" class="h-10 mx-auto" />
+                  <p class="mt-2">Redux</p>
+                </div>
+                <div class="text-center">
+                  <img src="RestAPI.svg" alt="React" class="h-10 mx-auto" />
+                  <p class="mt-2">RestAPI</p>
+                </div>
+
+              </div>
+            </div>
+        
+            <!-- Database -->
+            <div class="mb-10">
+              <h3 class="text-xl font-semibold mb-4 text-white">🗄️ Database</h3>
+              <div class="flex flex-wrap gap-8">
+                <div class="text-center">
+                  <img src="MySQL.svg" alt="MySQL" class="h-10 mx-auto" />
+                  <p class="mt-2">MySQL</p>
+                </div>
+                <div class="text-center">
+                  <img src="MongoDB.svg" alt="MySQL" class="h-10 mx-auto" />
+                  <p class="mt-2">MongoDB</p>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Tools -->
+            <div class="mb-10">
+              <h3 class="text-xl font-semibold mb-4 text-white">⚙️ Tools/Software/Others</h3>
+              <div class="flex flex-wrap gap-8">
+                <div class="text-center">
+                  <img src="Git.svg" alt="Git" class="h-10 mx-auto" />
+                  <p class="mt-2">Git</p>
+                </div>
+                <div class="text-center">
+                  <img src="Github.svg" alt="Git" class="h-10 mx-auto" />
+                  <p class="mt-2">GitHib</p>
+                </div>
+                <div class="text-center">
+                  <img src="VSCode.svg" alt="Git" class="h-10 mx-auto" />
+                  <p class="mt-2">VSCode</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+      </div>
+  </div>
+</div>
+
+             
+             <section class=" text-white py-10 px-4" id="education">
+              <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 font-mono">Education</h2>
+            
+              <div class="relative max-w-4xl mx-auto">
+                
+                <!-- Timeline line -->
+                <div class="absolute top-0 left-4 md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-[#35383c]"></div>
+            
+                <!-- Items -->
+                <div class="space-y-16">
+            
+                  <!-- Item 1 -->
+                  <div class="flex flex-col md:flex-row items-start relative ">
+                    <div class="w-6 h-6 bg-black border-4 border-[#212170] shadow-lg shadow-blue-500/40 backdrop-blur-lg rounded-full z-10 absolute left-[0.500rem] md:left-1/2 transform md:-translate-x-1/2 top-1 md:top-5"></div>
+
+            
+                    <div class="ml-10 md:ml-0 md:w-1/2 md:pr-8 order-2 md:order-1">
+                      <div class="relative bg-[#06111c] p-5 rounded-lg before:absolute before:top-5 before:-left-4 md:before:-right-4 before:w-0 before:h-0 before:border-t-8 before:border-b-8 before:border-r-8 md:before:border-r-0 md:before:border-l-8 before:border-t-transparent before:border-b-transparent before:border-r-gray-700 md:before:border-l-gray-700  shadow-lg shadow-blue-500/40 backdrop-blur-lg" data-aos="fade-right">
+                        <h3 class="text-2xl font-bold mb-2">Full Stack Web Development</h3>
+                        <p class="text-sm text-gray-300">Internshala | 2024 - 2025</p>
+                        <ul class="list-disc list-inside text-sm mt-2 space-y-1">
+                          <li>Learned HTML/CSS,JavaScript, React, Node.js, DBMS</li>
+                          <li>Developed a YouTube clone with responsive design and live API data.</li>
+                          <li>Build 5 Full Stack web pages</li>
+                          <li>Built interactive UIs using React and managed component state using hooks.</li>
+                          <li>Familiar with Git/GitHub, VS Code, and deployment on Vercel/Netlify.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="hidden md:block md:w-1/2 order-1 md:order-2"></div>
+                  </div>
+            
+                  <!-- Item 2 -->
+                  <div class="flex flex-col md:flex-row items-start relative">
+                    <div class="w-6 h-6 bg-black border-4 border-[#00008B] rounded-full z-10 absolute  left-[0.500rem] md:left-1/2 transform md:-translate-x-1/2 top-1 md:top-5"></div>
+            
+                    <div class="ml-10 md:hidden">
+                      <div class="relative bg-[#06111c] p-5 rounded-lg before:absolute before:top-5 before:-left-4 before:w-0 before:h-0 before:border-t-8 before:border-b-8 before:border-r-8 before:border-t-transparent before:border-b-transparent before:border-r-gray-700 shadow-lg shadow-blue-500/40 backdrop-blur-lg">
+                        <h3 class="text-2xl font-semibold mb-2">Bachelor of Technology</h3>
+                        <p class="text-sm text-gray-300">Maulana Abul Kalam Azad University | 2021 - 2024</p>
+                        <ul class="list-disc list-inside text-sm mt-2 mb-4">
+                          <li>Gained a strong foundation in Computer Science fundamentals including Data Structures, Algorithms, and Operating Systems.</li>
+                          <li>Worked on academic projects involving JavaScript, C++, or Python</li>
+                          <li>Collaborated in team-based mini projects and final year project involving real-world problem-solving. </li>
+                        </ul>
+                      </div>
+                    </div>
+            
+                    <div class="hidden md:block md:w-1/2 order-1"></div>
+            
+                    <div class="hidden md:block md:w-1/2 md:pl-8 order-2">
+                      <div class="relative bg-[#06111c] p-5 rounded-lg shadow-lg shadow-blue-500/40 backdrop-blur-lg before:absolute before:top-5 before:-left-4 before:w-0 before:h-0 before:border-t-8 before:border-b-8 before:border-r-8 before:border-t-transparent before:border-b-transparent before:border-r-gray-700" data-aos="fade-left">
+                        <h3 class="text-2xl font-bold mb-2">Bachelor of Technology</h3>
+                        <p class="text-sm text-gray-300">Maulana Abul Kalam Azad University | 2021 - 2024</p>
+                        <ul class="list-disc list-inside text-sm mt-2">
+                          <li>Gained a strong foundation in Computer Science fundamentals including Data Structures, Algorithms, and Operating Systems.</li>
+                          <li>Worked on academic projects involving JavaScript, C++, or Python</li>
+                          <li>Collaborated in team-based mini projects and final year project involving real-world problem-solving.
+
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Item 3 -->
+                  <div class="flex flex-col md:flex-row items-start relative">
+                    <div class="w-6 h-6 bg-black border-4 border-[#00008B] rounded-full z-10 absolute left-[0.500rem] md:left-1/2 transform md:-translate-x-1/2 top-1 md:top-5"></div>
+                    <div class="ml-10 md:ml-0 md:w-1/2 md:pr-8 order-2 md:order-1">
+                      <div class="relative bg-[#06111c] p-5 rounded-lg shadow-lg shadow-blue-500/40 backdrop-blur-lg before:absolute before:top-5 before:-left-4 md:before:-right-4 before:w-0 before:h-0 before:border-t-8 before:border-b-8 before:border-r-8 md:before:border-r-0 md:before:border-l-8 before:border-t-transparent before:border-b-transparent before:border-r-gray-700 md:before:border-l-gray-700" data-aos="fade-right">
+                        <h3 class="text-2xl font-bold mb-2">Diploma in Engineering(CSE)</h3>
+                        <p class="text-sm text-gray-300">Noida International University | 2018 - 2021</p>
+                        <ul class="list-disc list-inside text-sm mt-2">
+                          <li>Built foundational knowledge in Programming, Networking, and Computer Architecture.</li>
+                          <li>Participated in technical workshops and seminars to enhance practical skills.
+
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+            
+                    <div class="hidden md:block md:w-1/2 order-1 md:order-2"></div>
+                  </div>
+            
+                </div>
+              </div>
+            </section>
+<section id="projects" class="bg-[#0f0f0f] text-white py-20 px-6 md:px-20">
+  <h2 class="text-4xl md:text-5xl font-extrabold mb-16 text-center">Projects</h2>
+  
+  <div class="grid md:grid-cols-2 gap-10 hidenn">
+    
+    <!-- Project Card -->
+    <div class="relative border border-gray-800 bg-[#0f172a] rounded-xl p-6 overflow-hidden shadow-md hover:shadow-xl transition-all group" id="work" data-aos="fade-right">
+      <img src="HealthPlanner.png" alt="Weather App" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-all duration-500 rounded-xl" />
+      <div class="relative z-10 space-y-4 " >
+        <p class="text-cyan-400 font-mono text-sm">Featured Project</p>
+        <h3 class="text-2xl font-bold">Health Planner</h3>
+        <p class="text-gray-400">A real-time health tracking web app to manage diet, workouts, and hydration goals.</p>
+        <p class="text-sm text-gray-400 font-mono">Includes an AI-powered chatbot to provide instant health guidance and suggestions.</p>
+        <p class="text-sm text-gray-400 font-mono">Built with <strong>React, Tailwind CSS, Node.js, Express, MongoDB</strong> for a full-stack experience.</p>
+        <div class="flex gap-4 text-white text-xl mt-4">
+          <a href="https://health-planner-frontend.vercel.app/#/" target="_blank" class="hover:text-cyan-400">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="relative border border-gray-800 bg-[#0f172a] rounded-xl p-6 overflow-hidden shadow-md hover:shadow-xl transition-all group" data-aos="fade-left">
+      <img src="lms.png" alt="" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-all duration-500 rounded-xl" />
+      <div class="relative z-10 space-y-4">
+        <p class="text-cyan-400 font-mono text-sm">Featured Project</p>
+        <h3 class="text-2xl font-bold">Learning Management System</h3>
+        
+        <p class="text-sm text-gray-400 font-mono">Developed a responsive full-stack Learning Management System (LMS) platform where users can register, log in, view available courses, and enroll to learn interactively.</p>
+        <p class="text-sm text-gray-400 font-mono">Designed and implemented a modular LMS platform using React and Appwrite, focusing on real-time course enrollment, secure authentication, and a dynamic dashboard for personalized learning — fully responsive and production-ready.</p>
+        
+        <div class="flex gap-4 text-white text-xl mt-4">
+          <a href="https://lms-ou76.vercel.app/
+          " target="_blank" class="hover:text-cyan-400">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="relative border border-gray-800 bg-[#0f172a] rounded-xl p-6 overflow-hidden shadow-md hover:shadow-xl transition-all group" id="work" data-aos="fade-right">
+      <img src="./Images/Live-Flight-Tracker-Map.webp" alt="Weather App" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-all duration-500 rounded-xl" />
+      <div class="relative z-10 space-y-4 " >
+        <p class="text-cyan-400 font-mono text-sm">Featured Project</p>
+        <h3 class="text-2xl font-bold">Flight Tracker</h3>
+        <p class="text-gray-400">Built a real-time flight tracking web app using React and Redux Toolkit to manage flight search data and live airport status.</p>
+        <p class="text-sm text-gray-400 font-mono">Integrated location-based airport lookup and live status updates using a third-party aviation API.</p>
+        <p class="text-sm text-gray-400 font-mono">Used React Router for navigation across pages like About, Contact, Flight Results, Live Airport, and Luggage Tracker.</p>
+        <div class="flex gap-4 text-white text-xl mt-4">
+          <a href="https://flighttracker-seven.vercel.app/" target="_blank" class="hover:text-cyan-400">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- YouTube Clone -->
+    <div class="relative border border-gray-800 bg-[#0f172a] rounded-xl p-6 overflow-hidden shadow-md hover:shadow-xl transition-all group" data-aos="fade-left">
+      <img src="youtube.jpg" alt="YouTube Clone" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-all duration-500 rounded-xl" />
+      <div class="relative z-10 space-y-4">
+        <p class="text-cyan-400 font-mono text-sm">Featured Project</p>
+        <h3 class="text-2xl font-bold">YouTube Clone</h3>
+        <p class="text-gray-400">A YouTube clone built with React</p>
+        <p class="text-sm text-gray-400 font-mono">Integrated YouTube Data API v3 to fetch and display live video content including titles, thumbnails, channel info, and views.</p>
+        <p class="text-sm text-gray-400 font-mono">Managed state efficiently to handle API loading states and user interaction.</p>
+        <div class="flex gap-4 text-white text-xl mt-4">
+          <a href="https://youtube-clone-xi-umber.vercel.app/" target="_blank" class="hover:text-cyan-400">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+                <!------------------Contact Me--------------->
+<div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('')]">
+  <h2 class="text-center text-5xl hiddenn text-white">Get in touch</h2>
+  <p class="text-center p-6 text-white hiddenn">You can connect me and ask any queries regarding to any work</p>
+  <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+
+    <input type="hidden" name="access_key" value="9f003779-9185-4912-9511-bae75c4803f5">
+      <div class=" grid grid-cols-auto gap-6 mt-10 mb-8 hiddenn">
+          <input type="text" placeholder="Enter Your Name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required name="name">
+          <input type="email" placeholder="Enter Your Email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required name="email">
+      </div>
+      <textarea  rows="6" placeholder="Please! Enter Your Message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 hiddenn" required name="message"></textarea>
+      <button class="py-3 px-8 w-max flex items-center justify-center gap-2 bg-white/80 text-black rounded-full mx-auto hover:bg-white duration-500 cursor-pointer hiddenn">Send
+          <img src="2343641.png" alt="" class="w-6">
+      </button>
+  </form>
+  <div class="rounded-xl flex justify-center items-center mt-5">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16574.39497176886!2d77.2963636416862!3d28.5728462420177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4767689a381%3A0x83aeae3e998c214d!2sBatla%20House%2C%20Okhla%2C%20New%20Delhi%2C%20Delhi%20110025!5e0!3m2!1sen!2sin!4v1740813288338!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg shadow-[2px_0px_2px_2px_#000] h-80 hiddenn"></iframe>
+  </div>
+</div>
+                 <!-------Footer---->
+<div class="mt-20">
+  <div class="text-center hiddenn">
+   <img src="Lgog/Adil (1).png" alt="" class="w-36 mx-auto mb-2">
+   <div class="flex justify-center items-center">
+      <i class="fa-solid fa-envelope text-2xl mr-1 text-white"></i><span class="text-white">asif26679@gmail.com</span>
+   </div>
+  </div>
+  <div class="flex justify-between text-center border-t border-gray-400 mx-[10%] mt-12 py-6 hiddenn">
+      <p class="text-xs lg:text-xl text-white"> &copy;2025 Asif Ali. All rights reserved.</p>
+      <ul class="flex gap-4">
+          <li><a href="https"><i class="fa-brands fa-instagram text-xl lg:text-3xl text-white"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/mohd-asif-ali-8b4bb721a/" target="_blank"><i class="fa-brands fa-linkedin text-xl lg:text-3xl text-white"></i></a></li>
+          <li><a href="https://github.com/Asif26679" target="_blank"><i class="fa-brands fa-github text-xl lg:text-3xl text-white"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-phone text-xl lg:text-3xl text-white"></i></a></li>
+      </ul>
+  </div>
+</div>  
+
+<!----Font Awesome----------->
+<script src="https://kit.fontawesome.com/f2641c7a0e.js" crossorigin="anonymous"></script>
+<!----------My JS File----------------->
+<script src="script.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+      var typed = new Typed('#element', {
+          strings: ['Web Developer....', 'Web Designer....','Web Developer....'],
+          typeSpeed: 100,
+        });
+        
+    </script>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
